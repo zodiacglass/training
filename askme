@@ -1,18 +1,35 @@
+import random
+
+
 print("Welcome to my test script on ubuntu!")
 displays = []
 score = 0
+colors = []
+foods = []
+fav_nums = []
+previous_score = 0
 response = input("What is your favorite number?: ")
-if response == True:
+if response:
 	print("Actually, I don't care.")
+	fav_nums.append(response)
 else:
 	print("Try again.")
 response = input("What is your favorite color? ")
 if score < 1:
 	print("What a lame choice... but lets continue ")
 	score += 1
-if score >=1:
+if score > previous_score:
 		print("score is going up!")
 		print(score)
-else: 
+elif score < previous_score: 
 		print("score is not going up!")
 		print(score)
+response = input("What is your favorite food? ")
+if response:
+	foods.append(response)
+	score += 1
+	print(response)
+	print(score)
+print(foods + fav_nums)
+
+
