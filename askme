@@ -1,0 +1,7 @@
+print("Welcome to my test script on ubuntu!")
+displays = []
+response = input("What is your favorite number?: ")
+if response == '1':
+	print("This is response 1")
+else:
+	print("This is another response")
