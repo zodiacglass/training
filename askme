@@ -1,7 +1,18 @@
 print("Welcome to my test script on ubuntu!")
 displays = []
+score = 0
 response = input("What is your favorite number?: ")
-if response == '1':
-	print("This is response 1")
+if response == True:
+	print("Actually, I don't care.")
 else:
-	print("This is another response")
+	print("Try again.")
+response = input("What is your favorite color? ")
+if score < 1:
+	print("What a lame choice... but lets continue ")
+	score += 1
+if score >=1:
+		print("score is going up!")
+		print(score)
+else: 
+		print("score is not going up!")
+		print(score)
