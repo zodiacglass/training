@@ -1,35 +1,26 @@
 import random
 
-
+###First display text
 print("Welcome to my test script on ubuntu!")
-displays = []
-score = 0
-colors = []
-foods = []
-fav_nums = []
-previous_score = 0
+
+### Declare lists and variables
+favs = []
+
+
+### First Question
 response = input("What is your favorite number?: ")
 if response:
-	print("Actually, I don't care.")
-	fav_nums.append(response)
-else:
-	print("Try again.")
+	print("Very good. Lets keep going.")
+	favs.append(response)
 response = input("What is your favorite color? ")
-if score < 1:
-	print("What a lame choice... but lets continue ")
-	score += 1
-if score > previous_score:
-		print("score is going up!")
-		print(score)
-elif score < previous_score: 
-		print("score is not going up!")
-		print(score)
+if response:
+	print("Got it." )
+	favs.append(response)
 response = input("What is your favorite food? ")
 if response:
-	foods.append(response)
-	score += 1
-	print(response)
-	print(score)
-print(foods + fav_nums)
+	favs.append(response)
+print('So far I have learned that your favorite number is: ' + favs[0] + '\n' + 'Your favorite color is: ' + favs[1] + '\n' + 'Also your favorite food is: ' + favs[2])
+print(favs)
+
 
 
